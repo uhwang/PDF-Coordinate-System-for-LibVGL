@@ -28,8 +28,6 @@ dev.line(0,0,.8,.8,lcol=vgl.BLUE, lthk=0.01)
 vgl.draw_axis(dev)
 dev.close()
 ```
-fmm.create(1,1,6,6, …) : a frame with starting point(1 inch in x and 1 inch in y from upper left corner) and width (6 inch), height (6 inch). The frame is the outermost boundary. 
-vgl.Data(0,1,0,1) : xmin (0), xmax (1), ymin (0), ymax (1)
 
 ![Image](https://github.com/user-attachments/assets/d1174a82-d7be-432f-b227-0b53d82c1add)
 
