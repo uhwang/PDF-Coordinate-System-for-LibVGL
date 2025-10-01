@@ -20,6 +20,7 @@ The default coordinate system of PDF is like the picture on the left side. There
 ```Python
 import libvgl as vgl
 fmm  = vgl.FrameManager()
+# sx: 1, sy: 1, wid: 6, hgt: 6, xmin: 0, xmax: 1, ymin: 0, ymax: 1
 frm = fmm.create(1,1,6,6, vgl.Data(0,1,0,1))
 dev = vgl.DevicePDF("1.pdf", fmm.get_gbbox(),pdir='L',compression=False)
 dev.set_device(frm)
