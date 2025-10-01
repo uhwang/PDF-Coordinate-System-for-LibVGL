@@ -11,6 +11,7 @@ PDF coordinate system is the same as Cartesian coordinate system. The origin is 
 ![Image](https://github.com/user-attachments/assets/c52a6944-3197-42fd-bfc3-c1617b5cecd7)
 ![Image](https://github.com/user-attachments/assets/f5e91e83-e4fb-40cf-abef-b4fabe365248)
 
+
 The default coordinate system of PDF is like the picture on the left side. There are two types of page direction: portrait and landscape. For portrait, reversing y direction is enough, but for landscape more steps are necessary to plot graphic elements. For landscape, the page must be rotated 90 degrees. This can be done in page dictionary (3 0 obj at the sample PDF file). When the page is rotated to 90 degrees, the axis geometry is like the picture on the right side. Then there is nothing you can do to draw graphic elements in this stage. You must use CTM to the whole graphic elements to place them on LibVGL coordinates system. There are three steps: translate, rotate, and reverse y direction. 
    
 ![Image](https://github.com/user-attachments/assets/7d5d599b-5099-4c1d-86f4-80da61e0ad2f)
